@@ -2,249 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" conte nt="width=device-width, initial-scale=1.0">
-    <title>Group 2 - Projectile Motion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Projectile Motion</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-                /* General Body Styling */
-                /* General Body Styling */
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #2563eb, #f97316); /* Blue to Orange Gradient */
-            margin: 0;
-            padding: 0;
-            color: #000000; /* Dark Gray Text */
-        }
-        
-        /* Content Container */
-        .content-container {
-            background-color: white; /* White Content Area */
-            max-width: 900px; /* Limit the Width */
-            margin: 20px auto; /* Center Horizontally */
-            padding: 20px;
-            border-radius: 12px; /* Softer Corners */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Softer Shadow */
-            text-align: center; /* Center-align Text */
-        }
-        
-        /* Navigation Bar */
-        nav ul {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        nav ul li a {
-            text-decoration: none;
-            color: #2563eb; /* Primary Blue */
-            font-weight: 600;
-            padding: 10px 15px;
-            border-radius: 6px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        
-        nav ul li a:hover {
-            background-color: #f97316; /* Accent Orange */
-            color: white;
-        }
-        
-        /* Section Styling */
-        section {
-            padding: 50px 20px;
-            margin: 50px 0;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center; /* Center-align Text */
-        }
-        
-        /* Specific Sections */
-        #about {
-            background: linear-gradient(135deg, #93c5fd, #fed7aa); /* Light Blue to Light Orange Gradient */
-        }
-        
-        #simulation {
-            background: linear-gradient(135deg, #e3f2fd, #fef3c7); /* Light Blue to Cream Gradient */
-        }
-        
-        #gallery {
-            background: linear-gradient(135deg, #fef3c7, #fed7aa); /* Cream to Light Orange Gradient */
-        }
-        
-        #trivia {
-            background: linear-gradient(135deg, #93c5fd, #fef3c7); /* Light Blue to Cream Gradient */
-        }
-        
-        #credits {
-            background-color: #fed7aa; /* Light Orange Background */
-            color: #000000; /* Dark Gray Text */
-            padding: 20px;
-        }
-        
-        /* Footer */
-        footer {
-            background: linear-gradient(90deg, #2563eb, #f97316); /* Blue to Orange Gradient */
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-        
-        footer p {
-            margin: 0;
-        }
-        
-        /* Gallery Grid */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-        
-        .grid img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .grid img:hover {
-            transform: scale(1.05); /* Slight Zoom Effect */
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-        }
-        
-        /* Headings */
-        h2 {
-            font-size: 2rem;
-            color: #2563eb; /* Primary Blue */
-            margin-bottom: 20px;
-            position: relative;
-        }
-        
-        h2::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 4px;
-            background-color: #f97316; /* Accent Orange */
-            margin: 10px auto 0;
-        }
-        
-        /* Smooth Scrolling */
-        html {
-            scroll-behavior: smooth; /* Enables Smooth Scrolling */
-        }
-    </style>
+    <link rel="stylesheet" href="Group-2-styles.css"> <!-- Link to your CSS file -->
 </head>
-<header class="bg-white py-4 shadow-md sticky top-0 z-50">
-    <div class="container mx-auto px-4 flex justify-between items-center">
-        <!-- Navigation Bar -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Documentation.html">Documentation</a></li>
-                <li><a href="simulation.html">Simulation</a></li>
-                <li><a href="credits.html">Credits</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<!-- Hero Section -->
-<section class="hero bg-gradient-to-r from-blue-500 to-orange-500 text-white text-center py-20">
-    <div class="container mx-auto px-4">
-        <!-- Group Logo -->
-        <img src="https://static.wixstatic.com/media/f0457a_fc8ae9c1c3b64c959e6cefa58a3dd397~mv2.jpg/v1/fill/w_220,h_140,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0457a_fc8ae9c1c3b64c959e6cefa58a3dd397~mv2.jpg" alt="Group Logo" class="mx-auto mb-6 w-32 h-32 object-contain">
-        
-        <h1 class="text-5xl font-bold mb-4">Welcome to Projectile Motion</h1>
-        <p class="text-lg mb-6">Explore the fascinating world of physics through interactive simulations, galleries, and trivia.</p>
-        <a href="#about" class="bg-white text-blue-500 font-semibold py-3 px-6 rounded-full shadow-md hover:bg-gray-100 transition duration-300">Learn More</a>
-    </div>
-</section>
-
-<!-- Main Content -->
-<main class="container mx-auto px-4">
-    <!-- About Section -->
-    <section id="about">
-        <div class="text-center">
-            <h2 class="text-3xl font-semibold mb-4">Introduction</h2>
-            <p class="text-black-600">
-                Welcome!
-We are Batch 1 - Group 2, and this page is dedicated to helping you explore and understand the fascinating concept of projectile motion. Here, you'll find clear explanations, real-world applications, and an interactive simulation designed to deepen your understanding through hands-on learning.
-Whether you're a curious student or just someone interested in physics, we hope you find this website both enjoyable and educational. Let’s dive into the science of motion! 
-            </p>
-        </div>
-    </section>
-    <!-- Other sections... -->
-</main>
 <body>
     <!-- Content Container -->
     <div class="content-container">
+        <!-- Navigation Bar -->
+        <header class="bg-white py-4 shadow-md sticky top-0 z-50">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <h1 class="text-2xl font-bold text-gray-800">Projectile Motion</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Documentation.html">Documentation</a></li>
+                        <li><a href="simulation.html">Simulation</a></li>
+                        <li><a href="credits.html">Credits</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
         <!-- Main Content -->
         <main class="container mx-auto px-4">
-            <!-- About Section -->
             <section id="about">
-                <div class="text-center">
-                    <h2 class="text-3xl font-semibold mb-4">What is Projectile Motion?</h2>
-                    <p class="text-Black-600">
-                        If you fire a cannon at some angle, the cannonball will travel in an arc: it goes up and it comes back down, but it also travels horizontally the whole time in the direction that you fired it. This is projectile motion.
+                <h2 class="text-3xl font-semibold mb-4">What we do</h2>
+                <p class="text-gray-600">
+                    We conducted experiments where we launched objects at different angles and speeds. By measuring how far and high the objects traveled, we were able to observe how gravity and weight affects the path of a moving object without air resistance.
+                </p>
+            </section>
 
-                        Essentially you have motion in two directions: vertically up and down, and horizontally/parallel to the ground. 
+            <section id="hypothesis" class="mt-12">
+                <div class="text-center">
+                    <h2 class="text-3xl font-semibold mb-4">Hypothesis</h2>
+                    <p class="text-gray-600">
+                        We hypothesize that, in the absence of air resistance, objects of different masses will fall at the same rate and hit the ground at the same time. This challenges the common misconception that heavier objects fall faster than lighter ones. According to physics principles, all objects experience the same gravitational acceleration regardless of mass.
                     </p>
                 </div>
             </section>
-                        <section id="trivia">
-                            <div class="text-center">
-                                <h2 class="text-3xl font-semibold mb-4">Physics Trivia</h2>
-                                <div class="slideshow-container">
-                                    <!-- Slide 1 -->
-                                    <div class="slide">
-                                        <p class="text-Black-600">Did you know that the maximum range of a projectile is achieved when it is launched at an angle of 45 degrees?</p>
-                                    </div>
-                                    <!-- Slide 2 -->
-                                    <div class="slide">
-                                        <p class="text-Black-600">Before defining projectile motion equations, Galileo rolled balls down inclined planes to slow down their fall and count pulses more accurately. By adjusting the slope, he effectively “tuned” gravity’s acceleration, which later let him combine vertical and horizontal motions into the familiar parabola.</p>
-                                    </div>
-                                    <!-- Slide 3 -->
-                                    <div class="slide">
-                                        <p class="text-Black-600">On the Moon, gravity is only about 1/6 as strong as on Earth—and there’s no atmosphere. A projectile launched at, say, 30 m/s would stay aloft roughly 2½ times longer and fly about 2½ times farther than on Earth, tracing a near-perfect parabola all the way. Astronauts on Apollo used just these principles when tossing small objects in lunar module tests!.</p>
-                                    </div>
-                                    <!-- Navigation Buttons -->
-                                    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-                                    <button class="next" onclick="changeSlide(1)">&#10095;</button>
-                                </div>
-                            </div>
-                        </section>
+
+            <section id="gallery">
+                <div class="text-center">
+                    <h2 class="text-3xl font-semibold mb-4">Gallery</h2>
+                    <p class="text-gray-600 mb-4">Check out some images related to projectile motion.</p>
+                </div>
+                <div class="grid">
+                    <img src="https://via.placeholder.com/300" alt="Placeholder Image 1">
+                    <img src="https://via.placeholder.com/300" alt="Placeholder Image 2">
+                    <img src="https://via.placeholder.com/300" alt="Placeholder Image 3">
+                    <img src="https://via.placeholder.com/300" alt="Placeholder Image 4">
+                </div>
+            </section>
         </main>
     </div>
 
-    <script>
-        let currentSlideIndex = 0;
-    
-        function showSlide(index) {
-            const slides = document.querySelectorAll('.slide');
-            if (index >= slides.length) currentSlideIndex = 0;
-            if (index < 0) currentSlideIndex = slides.length - 1;
-    
-            slides.forEach((slide, i) => {
-                slide.style.display = i === currentSlideIndex ? 'block' : 'none';
-            });
-        }
-    
-        function changeSlide(step) {
-            currentSlideIndex += step;
-            showSlide(currentSlideIndex);
-        }
-    
-        // Initialize the slideshow
-        document.addEventListener('DOMContentLoaded', () => {
-            showSlide(currentSlideIndex);
-        });
-    </script>
+    <!-- Footer -->
 
 </body>
 </html>
