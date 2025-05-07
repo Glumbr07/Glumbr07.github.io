@@ -1,0 +1,268 @@
+/* General Body Styling */
+/* General Body Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #2563eb, #f97316); /* Blue to Orange Gradient */
+    margin: 0;
+    padding: 0;
+    color: #000000; /* Dark Gray Text */
+}
+
+/* Content Container */
+.content-container {
+    background-color: white; /* White Content Area */
+    max-width: 900px; /* Limit the Width */
+    margin: 20px auto; /* Center Horizontally */
+    padding: 20px;
+    border-radius: 12px; /* Softer Corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Softer Shadow */
+    text-align: center; /* Center-align Text */
+}
+
+/* Navigation Bar */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2563eb; /* Primary Blue */
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f97316; /* Accent Orange */
+    color: white;
+}
+
+/* Section Styling */
+section {
+    padding: 50px 20px;
+    margin: 50px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align Text */
+}
+
+/* Specific Sections */
+#about {
+    background: linear-gradient(135deg, #93c5fd, #fed7aa); /* Light Blue to Light Orange Gradient */
+}
+
+#simulation {
+    background: linear-gradient(135deg, #e3f2fd, #fef3c7); /* Light Blue to Cream Gradient */
+}
+
+#gallery {
+    background: linear-gradient(135deg, #fef3c7, #fed7aa); /* Cream to Light Orange Gradient */
+}
+
+#trivia {
+    background: linear-gradient(135deg, #93c5fd, #fef3c7); /* Light Blue to Cream Gradient */
+}
+
+#credits {
+    background-color: #fed7aa; /* Light Orange Background */
+    color: #000000; /* Dark Text */
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #2563eb, #f97316); /* Blue to Orange Gradient */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Gallery Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid img:hover {
+    transform: scale(1.05); /* Slight Zoom Effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h2 {
+    font-size: 2rem;
+    color: #2563eb; /* Primary Blue */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #f97316; /* Accent Orange */
+    margin: 10px auto 0;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth; /* Enables Smooth Scrolling */
+}
+
+/* Logo Styling */
+header img {
+    height: 40px; /* Adjust the height of the logo */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add spacing between the logo and text */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Slides */
+.slide {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #93c5fd, #fef3c7); /* Light Blue to Cream Gradient */
+    border-radius: 12px;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Hypothesis Section */
+#hypothesis {
+    background: linear-gradient(135deg, #f97316, #93c5fd); /* Orange to Blue Gradient */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: white; /* Make text white for better contrast */
+    margin-bottom: 20px;
+}
+
+#hypothesis h2 {
+    color: #ffffff; /* White heading text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add subtle text shadow */
+}
+
+/* Gallery Section */
+#gallery {
+    background: linear-gradient(135deg, #93c5fd, #f97316); /* Blue to Orange Gradient */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: white; /* Make text white for better contrast */
+}
+
+#gallery h2 {
+    color: #ffffff; /* White heading text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add subtle text shadow */
+}
+
+#gallery .grid img {
+    border: 4px solid #ffffff; /* Add white border to images */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#gallery .grid img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+/* Credits Section */
+#credits {
+    background: linear-gradient(135deg, #f97316, #93c5fd); /* Orange to Blue Gradient */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: white; /* Make text white for better contrast */
+    margin-bottom: 20px;
+}
+
+#credits h2 {
+    color: #ffffff; /* White heading text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add subtle text shadow */
+}
+
+/* Feedback Section */
+#feedback {
+    background: linear-gradient(135deg, #93c5fd, #f97316); /* Blue to Orange Gradient */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: white; /* Make text white for better contrast */
+    margin-bottom: 20px;
+}
+
+#feedback h2 {
+    color: #ffffff; /* White heading text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add subtle text shadow */
+}
+
+#feedback a {
+    background-color: #2563eb; /* Primary Blue */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#feedback a:hover {
+    background-color: #f97316; /* Accent Orange */
+    transform: scale(1.05); /* Slight zoom effect */
+}
